@@ -1,5 +1,3 @@
-cordova.define("foodfast-printer-plugin.plugin", function(require, exports, module) {
-
 var exec = require('cordova/exec');
 
 var PLUGIN_NAME = 'PrinterPlugin';
@@ -26,4 +24,3 @@ var PrinterPlugin = {
 };
 
 module.exports = PrinterPlugin;
-});

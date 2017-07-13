@@ -58,15 +58,7 @@
 
 - (void) connectPrinter:(CDVInvokedUrlCommand*)command {
     NSLog(@"CONNECT - CALLED");
-//    [[PrinterSDK defaultPrinterSDK] stopScanPrinters];
     [[PrinterSDK defaultPrinterSDK] connectBT:printer];
-    
-//    double delayInSeconds = 1.0f;
-//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
-//    {
-//       [[PrinterSDK defaultPrinterSDK] printTestPaper];
-//    });
 }
 
 - (void) disconnectPrinter:(CDVInvokedUrlCommand*)command {
@@ -79,6 +71,12 @@
     NSLog(@"----------");
     NSLog(@"PRINTER NAME >> %@", printer.name);
     NSLog(@"PRINTER UUID >> %@", printer.UUIDString);
+    NSLog(@"----------");
+
+    NSString* textToPrint = [command.arguments objectAtIndex:0];
+    NSLog(@"# TEXT TO PRINT #");
+    NSLog(@"%@", textToPrint);
+    NSLog(@"----------");
     
     if (!printerConnected) {
         printerConnected = true;
@@ -89,11 +87,10 @@
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
         {
-           //       [[PrinterSDK defaultPrinterSDK] printTestPaper];
-            [[PrinterSDK defaultPrinterSDK] printText:@"\n\nTESTING\n\n"];
+            [[PrinterSDK defaultPrinterSDK] printText:textToPrint];
         });
     } else {
-        [[PrinterSDK defaultPrinterSDK] printText:@"\n\nTESTING\n\n"];
+        [[PrinterSDK defaultPrinterSDK] printText:textToPrint];
     }
     
     

@@ -1,11 +1,11 @@
 {
-  "name": "foodfast-printer-plugin",
+  "name": "foodfast-plugin-printer",
   "version": "1.0.0",
   "cordova": {
-    "id": "foodfast-printer-plugin",
+    "id": "foodfast-plugin-printer",
     "platforms": [
       "ios"
     ]
   },
-  "description": "Cordova Plugin for iOS devices"
+  "description": "Cordova Printer Plugin for iOS devices"
 }

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="foodfast-printer-plugin"
+    id="foodfast-plugin-printer"
     version="1.0.0">
     <name>FOODFAST Printer Plugin</name>
     <description></description>
     <license>MIT</license>
     <keywords></keywords>
-    <repo>https://bitbucket.org/primeitservices/foodfast_printer_plugin.git</repo>
-    <issue>https://bitbucket.org/primeitservices/foodfast_printer_plugin/issues</issue>
+    <repo>https://bitbucket.org/primeitservices/foodfast-plugin-printer.git</repo>
+    <issue>https://bitbucket.org/primeitservices/foodfast-plugin-printer/issues</issue>
 
     <!-- ios -->
     <platform name="ios">
