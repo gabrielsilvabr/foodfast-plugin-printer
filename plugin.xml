@@ -24,5 +24,7 @@
 
         <header-file src="src/ios/PrinterPlugin.h" />
         <source-file src="src/ios/PrinterPlugin.m" />
+        <header-file src="src/ios/PrinterSDK.h" framework="true" />
+        <source-file src="src/ios/libPrinterSDK.a" framework="true" />
     </platform>
 </plugin>
