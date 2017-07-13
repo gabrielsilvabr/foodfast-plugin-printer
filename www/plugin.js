@@ -18,8 +18,8 @@ var PrinterPlugin = {
     disconnectPrinter: function(successCallback, errorCallback) {
         exec(successCallback, errorCallback, PLUGIN_NAME, 'disconnectPrinter', []);
     },
-    print: function(successCallback, errorCallback) {
-        exec(successCallback, errorCallback, PLUGIN_NAME, 'print', []);
+    print: function(textToPrint, successCallback, errorCallback) {
+        exec(successCallback, errorCallback, PLUGIN_NAME, 'print', [textToPrint]);
     }
 };
 
