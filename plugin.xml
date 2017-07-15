@@ -4,7 +4,7 @@
     id="foodfast-plugin-printer"
     version="1.0.0">
     <name>FOODFAST Printer Plugin</name>
-    <description></description>
+    <description>Bluetooth Printer Plugin</description>
     <license>MIT</license>
     <keywords></keywords>
     <repo>https://bitbucket.org/primeitservices/foodfast-plugin-printer.git</repo>
