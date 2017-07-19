@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="foodfast-plugin-printer"
+    id="foodfast-plugin-printeir-ios"
     version="1.0.0">
     <name>FOODFAST Printer Plugin</name>
     <description>Bluetooth Printer Plugin</description>
